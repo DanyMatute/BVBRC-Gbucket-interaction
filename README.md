@@ -11,7 +11,7 @@ This repository contains scripts and tips that help move many files from a googl
     3. Location where the output assembly will be placed in BVBRC
 3. Wait for the assemblies to finish. 
 4. Go to the BVBRC and download the directory containing the assembly. A JSON file will donwload locally containing the assembly files. 
-5. Run **Get_assembly_fromJSON.py**. The code will iterate thought all the JSON files in a directory and ```p3-cp``` (copy) the assembly files from BVBRC locally.
+5. Run **Get_assembly_fromJSON.py**. The code will iterate thought all the JSON files in a directory and ```p3-cp``` (copy) the assembly files from BVBRC to your local device.
    Change the location of the JSON files within the .py
 6. Upload the assembly files to the google bucket. 
-    ```gsutil -m cp -r /Local/Sourse/of/Assembly/Files gs://Google/Bucket/Destination```
+    ```gsutil -m cp -r /Local/Source/of/Assembly/Files gs://Google/Bucket/Destination```
