@@ -19,7 +19,7 @@ fi
 
 # User input 
 read -p "Google Bucket Location: " gbucket
-read -p "BVBRC Location: " bvbrc_location
+read -p "BVBRC Assembly Location: " bvbrc_location
 read -p "BVBRC raw reads location: " raw_location
 
 if gsutil -q ls "$gbucket" > samples.txt; then
@@ -52,7 +52,7 @@ while IFS= read -r current_line; do
 
     temp_file1=$(mktemp "/tmp/$file_1")
     temp_file2=$(mktemp "/tmp/$file_2")
-    
+
     gsutil cp $prev_line $temp_file1
     gsutil cp $current_line $temp_file2
 
