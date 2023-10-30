@@ -34,7 +34,7 @@ def download_sample(local_json):
         print(">>> ",file_name, " cp to ", output_dir_name)
 
 
-# INPUT: Directory from which the directories are retrived from 
+# INPUT: Directory from which the JSON are retrived from 
 directory_path = "/Users/dmatute/Documents/CAMRA/Bioinformatics/Assembly_Tool_Testing/From_Gbucket_ToFrom_BVBRC/IFAIN_Retro_BatchB_JSON" 
 
 directory = Path(directory_path)
