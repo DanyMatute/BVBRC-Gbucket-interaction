@@ -5,7 +5,7 @@ This repository contains scripts and tips that help move many files from a googl
 1. Open [BV-BRC](https://www.bv-brc.org/) account. Download the [BVBRC's CLI](https://www.bv-brc.org/docs/cli_tutorial/index.html).
 2. Run **Pull_many_Gfiles_Push_to_BVBRC-assemb.sh** on PATRIC (BVBRC's CLI). This script will ```gsutil cp``` files from the bucket to a temporary bucket locally and will puch them to the BVBRC for assembly. 
 
-    Inputs
+    Inputs that will be prompted:
     1. Google Bucket location of reads
     2. Location where the raw reads will be loaded on BVBRC
     3. Location where the output assembly will be placed in BVBRC
